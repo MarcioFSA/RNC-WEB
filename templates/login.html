@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+
+{% block body%}
+<div class="container text-center">
+  <div class="row">
+    <div class="col">
+
+    </div>
+    <div class="col-6" >
+      <form method="POST" action="" class="border ps-5 mt-5 me-2 ms-2 pe-5 border border-secondary-subtle">
+                    <legend class=" text-center">L O G I N</legend>
+                    <hr>
+                    <fieldset >
+                        <div class="form-group">
+                            {{ form_login.username.label(class ="form-control-label")}}
+                            {{ form_login.username(class ="form-control") }}
+                        </div>
+
+                        <div class="form-group ">
+                            {{ form_login.senha.label(class ="form-control-label")}}
+                            {{ form_login.senha(class ="form-control")}}
+                        </div>
+
+                    </fieldset>
+                    <div class="form-group mt-2 ">
+                        {{ form_login.botao_login(class="btn btn-primary d-grid gap-2 col-8 mx-auto") }}
+                    </div>
+                    <div class="form-group mt-2 ">
+                        {{ form_login.botao_anonimo(class="btn btn-secondary d-grid gap-2 col-8 mx-auto") }}
+                    </div>
+
+                </form>
+    </div>
+    <div class="col">
+
+    </div>
+  </div>
+</div>
+<!--<div class="container  ">-->
+<!--    <div class="row">-->
+<!--        <div class="col">-->
+<!--            <main class="form-signin w-100 m-auto">-->
+<!--                <form method="POST" action="" class="border ps-5 mt-5 me-5 ms-5 pe-5 ">-->
+<!--                    <legend class="h3 mb-3 fw-normal text-center">Login</legend>-->
+<!--                    <hr>-->
+<!--                    <fieldset class="center">-->
+<!--                        <div class="form-group">-->
+<!--                            {{ form_login.username.label(class ="form-control-label")}}-->
+<!--                            {{ form_login.username(class ="form-control") }}-->
+<!--                        </div>-->
+
+<!--                        <div class="form-group ">-->
+<!--                            {{ form_login.senha.label(class ="form-control-label")}}-->
+<!--                            {{ form_login.senha(class ="form-control")}}-->
+<!--                        </div>-->
+
+<!--                    </fieldset>-->
+<!--                    <div class="form-group mt-2">-->
+<!--                        {{ form_login.botao_login(class="btn btn-primary") }}-->
+<!--                    </div>-->
+
+<!--                    <div class="form-group mt-2">-->
+<!--                        {{ form_login.botao_anonimo(class="btn btn-secondary") }}-->
+<!--                    </div>-->
+
+<!--                </form>-->
+<!--            </main>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+{%endblock%}
